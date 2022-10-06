@@ -1,0 +1,681 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  width: 1000px;
+  padding: auto;
+  margin: auto;
+}
+
+.top-bar {
+  background-color: #16ba0a;
+  height: 30px;
+  width: 100%;
+}
+
+.row {
+  height: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftside {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 12px;
+}
+
+p.paragraph {
+  margin-right: 80px;
+}
+p.paragraph::after {
+  content: "";
+  width: 2px;
+  height: 5px;
+  background: white;
+}
+
+.rightside {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 12px;
+}
+
+.rightside a {
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.rightside p {
+  margin-left: 10px;
+}
+
+.social-icon {
+  margin-left: 20px;
+}
+
+.social-icon i {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.social-icon i:hover {
+  background-color: #16ba0a;
+  color: white;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0px;
+}
+.logo img {
+  width: 135px;
+}
+
+.srch-btn {
+  border-right: none;
+  padding: 10px;
+  border: 0.5px solid darkgrey;
+  width: 76%;
+}
+
+.category-scrh {
+  width: 31%;
+}
+
+button {
+  padding: 11px 25px;
+  color: white;
+  background: #16ba0a;
+  border: none;
+  margin-left: -6px;
+}
+
+.icons {
+  display: flex;
+  gap: 6px;
+}
+
+.icons p {
+  font-size: 12px;
+  margin-right: 12px;
+}
+
+.icons a {
+  font-size: 12px;
+  text-decoration: none;
+}
+
+menu {
+  background: #343434;
+  width: 100%;
+  margin: auto;
+  height: 50px;
+  align-items: center;
+}
+
+.contain {
+  width: 50%;
+  margin: auto;
+}
+
+menu ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 20px;
+}
+
+menu ul li {
+  list-style: none;
+}
+
+menu ul li a {
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+menu ul li a:hover {
+  color: #16ba0a;
+}
+
+/* --------------banner-section------------ */
+
+.main-banner {
+  display: flex;
+  width: 100%;
+  background: linear-gradient(90deg, #16ba0a85, #16ba0a85),
+    url("../2/img/banner.png");
+  background-size: cover;
+  text-align: center;
+  height: 600px;
+  justify-content: center;
+  text-align: center;
+}
+.main-banner h1 {
+  font-family: berlin sans system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+
+  font-size: 55px;
+  color: white;
+  text-shadow: 4px 4px #252525a6;
+  margin-bottom: 35px;
+}
+
+.main-banner a {
+  background: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.main-banner a:hover {
+  background: #16ba0a;
+  color: white;
+  border: 2px solid white;
+}
+
+/* Slideshow container */
+
+/* .slideshow-container {
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    margin: auto;
+  }
+
+  .mySlides{
+    width: 200px;
+    height: 400px;
+    overflow: hidden;
+  }
+
+  .mySlides img{
+    width: 150px;
+  }
+
+  .mySlides p{
+    font-size: 10px;
+    color: grey;
+  }
+
+  .mySlides a{
+    font-size: 10px;
+    text-decoration: none;
+  }
+  
+  /* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+}
+/* .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  } */
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+*/ .our-food {
+  margin: 70px 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.heading h1 {
+  margin: 50px;
+  position: relative;
+}
+
+.heading > h1::after {
+  content: "";
+  width: 6%;
+  height: 7px;
+  position: absolute;
+  background: #16ba0a;
+  align-items: center;
+  top: 50px;
+  left: 46%;
+  text-align: center;
+}
+
+.heading {
+  position: relative;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 0px 20px;
+  margin-bottom: 80px;
+}
+
+.card-container {
+  display: flex;
+  width: 70%;
+  margin: auto;
+}
+
+.card-1 i {
+  background: #343434;
+  padding: 45px;
+  font-size: 50px;
+  border-radius: 5px;
+  color: white;
+}
+
+.card-1 i:hover {
+  background: #16ba0a;
+  color: white;
+}
+
+.card-1 h1 {
+  margin: 11px 0px;
+  font-size: 15px;
+}
+
+.card-1 h1:hover {
+  color: #16ba0a;
+}
+
+.card-1 p {
+  font-size: 9px;
+  padding: 0px 65px;
+  text-align: revert;
+}
+
+.our-food {
+  text-align: center;
+}
+
+.our-food a {
+  background: #343434;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.our-food a:hover {
+  background: #16ba0a;
+  color: white;
+}
+
+.about-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutfood {
+  align-items: center;
+  margin: 70px 0px;
+  
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8) url(../2/img/banner2.png);
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.heading2 {
+  padding-top: 60px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.heading2 h1 {
+  color: white;
+}
+
+.heading2 > h1::after {
+  content: "";
+  width: 35%;
+  height: 7px;
+  position: absolute;
+  background: #16ba0a;
+  align-items: center;
+  top: 110px;
+  left: 30%;
+}
+
+.aboutfood p {
+  padding: 0px 100px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 60px;
+}
+
+.aboutfood a {
+  background: #343434;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-bottom: 60px;
+}
+
+.aboutfood a:hover {
+  background: #16ba0a;
+  color: white;
+}
+
+.latest-news {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading3 {
+  padding-top: 60px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.heading3 h1 {
+  color: black;
+}
+
+.heading3 > h1::after {
+  content: "";
+  width: 7%;
+  height: 7px;
+  position: absolute;
+  background: #16ba0a;
+  align-items: center;
+  top: 110px;
+  left: 46%;
+}
+
+.product-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 100px;
+  padding: 0px 140px;
+  align-items: center;
+}
+
+.product-info img {
+  width: 100%;
+}
+
+.protext h1 {
+  font-family: poppins;
+  margin: 20px 0px;
+  font-weight: bolder;
+  font-size: 37px;
+}
+
+.protext p {
+  font-size: 15px;
+  font-family: "Poppins";
+  margin-bottom: 75px;
+}
+
+.protext a {
+  text-decoration: none;
+  background: #16ba0a;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+
+.main-testiminial {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile {
+  background-color: #f8f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person-info {
+  display: flex;
+}
+.person-info img {
+  width: 250px;
+  margin-right: 25px;
+}
+
+.name {
+  margin-top: 100px;
+  margin-right: 101px;
+}
+
+.name h1 {
+  font-size: 20px;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.name p {
+  font-family: "Poppins";
+  color: #16ba0a;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.person-info i {
+  margin-top: 95px;
+  color: #16ba0a;
+  font-size: 35px;
+}
+
+.profile > p {
+  margin: 50px 76px;
+  text-align: justify;
+}
+
+/* ***********get-into-touch********** */
+
+.heading4 {
+  padding-top: 60px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.heading4 h1 {
+  color: black;
+}
+
+.heading4 > h1::after {
+  content: "";
+  width: 8%;
+  height: 7px;
+  position: absolute;
+  background: #16ba0a;
+  align-items: center;
+  top: 110px;
+  left: 47%;
+}
+
+.form-touch > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 27px;
+  margin-bottom: 60px;
+}
+
+input[type="text"] {
+  border-right: none;
+  padding: 15px;
+  border: 0.5px solid darkgrey;
+  width: 50%;
+}
+
+input[type="email"] {
+  border-right: none;
+  padding: 15px;
+  border: 0.5px solid darkgrey;
+  width: 50%;
+}
+
+.btn-send {
+  border-radius: 10px;
+  padding: 15px 66px;
+  color: white;
+  background: #16ba0a;
+  border: none;
+}
+
+/* ******************footer****************** */
+
+footer {
+  background-color: #252525;
+  margin: 60px 0px 0px 0px;
+}
+
+.footer-container {
+  width: 1150px;
+  margin: auto;
+  padding: 30px 0px;
+}
+
+.grid-4-coloumn {
+  display: flex;
+  justify-content: space-around;
+}
+
+.coloumns-4 h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.footer-list li {
+  list-style: none;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer-list li a {
+  color: #444444;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-list li a:hover {
+  color: #16ba0a;
+  border-bottom: 1px solid #16ba0a;
+  transition: ease 0.7s;
+}
+
+.footer-bottom {
+  background-color: #fff;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #444444;
+  margin: 20px 0px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+}

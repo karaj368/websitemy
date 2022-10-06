@@ -1,0 +1,225 @@
+@media (max-width: 1240px) {
+  body {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 945px) {
+  .top-bar {
+    display: flex;
+    background-color: #16ba0a;
+    height: 50px;
+  }
+
+  p.paragraph {
+    font-size: 18px;
+  }
+
+  .leftside {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 22px;
+    gap: 20px;
+  }
+
+  p.paragraph {
+    font-size: 18px;
+    margin-right: 0px;
+  }
+
+  .rightside {
+    font-size: 20px;
+  }
+
+  .logo img {
+    width: 200px;
+  }
+
+  .icons {
+    display: flex;
+    gap: 15px;
+  }
+
+  .icons a {
+    font-size: 17px;
+  }
+
+  menu {
+    padding: 20px 0px;
+    height: auto;
+  }
+
+  menu ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+  }
+
+  menu ul li a {
+    font-size: 16px;
+  }
+
+  .card-1 i {
+    padding: 50px;
+    font-size: 85px;
+  }
+
+  .card-1 {
+    padding: 0px 30px;
+  }
+
+  .card-container {
+    width: 100%;
+  }
+
+  .card-1 p {
+    font-size: 15px;
+  }
+
+  .card-1 h1 {
+    margin: 30px 0px;
+    font-size: 25px;
+  }
+
+  .product-info {
+    padding: 0px 50px;
+  }
+
+  .protext p {
+    font-size: 20px;
+  }
+
+  .protext h1 {
+    font-size: 32px;
+  }
+
+  .protext {
+    padding: 0px 30px;
+  }
+
+  .product-info {
+    padding: 0px 50px;
+  }
+
+  .main-banner h1 {
+    font-size: 72px;
+  }
+
+  .heading2 h1 {
+    color: white;
+    font-size: 32px;
+  }
+
+  .aboutfood p {
+    font-size: 18px;
+    padding: 0px 200px;
+  }
+
+  .testimonial {
+    flex-wrap: wrap;
+    gap: 5rem;
+    background-color: floralwhite;
+  }
+  .profile {
+    background-color: #f8f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .person-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .person-info img {
+    width: 700px;
+    margin: 0px;
+  }
+
+  .name {
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .person-info i {
+    margin: 0px;
+
+    font-size: 35px;
+  }
+
+  .name h1 {
+    font-size: 36px;
+    font-family: "Poppins";
+    font-weight: bold;
+  }
+
+  .name p {
+    font-weight: 900;
+    font-size: 28px;
+  }
+
+  .profile > p {
+    margin: 3rem 16rem;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 26px;
+  }
+
+  .footer-container {
+    display: grid;
+    width: 600px;
+    margin: auto;
+    padding: 30px 0px;
+  }
+
+  .grid-4-coloumn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 60px;
+  }
+
+  .coloumns-4 h2 {
+    color: white;
+
+    font-size: 32px;
+    font-family: "Poppins";
+  }
+
+  .footer-list li a {
+    font-size: 25px;
+  }
+
+  .coloumns-4 h2 {
+    color: white;
+    font-size: 32px;
+    font-family: "Poppins";
+  }
+
+  input[type="email"] {
+    font-size: 20px;
+  }
+
+  input[type="text"] {
+    font-size: 20px;
+  }
+
+  .btn-send {
+    border-radius: 10px;
+    padding: 15px 260px;
+    color: white;
+    background: #16ba0a;
+    border: none;
+    font-size: 25px;
+  }
+}
+
+@media screen (min-width: 768px) {
+}
+
+@media screen (min-width: 576px) {
+}
